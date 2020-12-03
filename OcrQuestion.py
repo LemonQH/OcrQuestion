@@ -54,8 +54,10 @@ def connect(pic_path):
     data['sign'] = sign
 
     response = do_request(data)
-    result=json.loads(str(response.content, 'utf-8'))
-    if result['errorCode']=='0':
-        #print(result['data'])
-        return result['data']
+    result=response.content.decode('utf-8')
+    print(result)
+    return result
+
+
+
 
