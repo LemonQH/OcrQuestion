@@ -10,7 +10,7 @@ class Question():
             result=connect(file_path)
             print(file_path)
             self.save_result_format(file_path,result)
-            self.save_result(file_path,result)
+            #self.save_result(file_path,result)
 
 
     def save_result(self,file_path,result):
